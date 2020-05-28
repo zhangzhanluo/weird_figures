@@ -45,6 +45,7 @@ plt.plot(corr_coefs, '.-')
 plt.xlabel('i-th step ahead DHW usage records')
 plt.ylabel('Correlation Coefficient')
 plt.title('Hourly Averaged: {}'.format(hourly_averaged))
+plt.savefig('Pics/DHW Usage Records.png', dpi=300)
 plt.show()
 
 # the correlation between DHW usage and temperature records
@@ -58,6 +59,7 @@ plt.plot(t_corr_coefs, '.-')
 plt.xlabel('i-th step ahead temperature records')
 plt.ylabel('Correlation Coefficient')
 plt.title('Hourly Averaged: {}'.format(hourly_averaged))
+plt.savefig('Pics/Temperature Records.png', dpi=300)
 plt.show()
 
 # the correlation between DHW usage and ventilation records
@@ -71,4 +73,5 @@ plt.plot(v_corr_coefs, '.-')
 plt.xlabel('i-th step ahead ventilation records')
 plt.ylabel('Correlation Coefficient')
 plt.title('Hourly Averaged: {}'.format(hourly_averaged))
+plt.savefig('Pics/Ventilation Records.png', dpi=300)
 plt.show()
